@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Card</title>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="assets/boostrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i&display=swap');
+		body{
+			font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+			background: url(image/bg_coffe.jpg);
+
+		}
+		.navbar{			
+			background: #f00;
+			z-index: 999999999999999999999;
+		}
+		.navbar .line{
+			position: absolute;
+			bottom:-14px;
+			left:0;
+			width:100%;
+			height: 15px;
+			background:url('image/tri.png') repeat-x
+		}
+		.feature{
+			font-family: crete round, serif;
+			position: relative;
+			float: left;
+			width:100%;
+			min-height: 500px;
+			overflow: hidden;
+			padding:130px 0;
+
+		}
+		.navbar .navbar-brand img{
+			max-height:70px;
+		}
+		.navbar .navbar-nav > li > a{
+			color:#fff !important;
+		}
+		form{
+			margin:0 auto;
+			margin-top:50px;
+			margin-bottom: 50px;
+		}
+		.copyright{
+			border-top:1px solid #dfdfdf;
+			float: right;
+			width: 100%;
+			padding:30px;
+			padding-top: 20px;
+			background-color:#ccc;
+			opacity: 0.7;
+		}
+		.thide{
+			margin-top:20px; 
+			text-align: center;
+			color: green;
+
+		}
+		.sp_mem{
+			  display: block;
+			  margin-top: 0.5em;
+			  margin-bottom: 0.5em;
+			  margin-left: 12em;
+			  margin-right: 12em;
+			  border-style: inset;
+			  border-width: 4px;
+		}
+		.mn_card{
+			border-top:1px solid #dfdfdf;
+			float: center;
+			width: 50%;
+			height: 50%;
+			padding:10px;
+			background-color: #ccc;
+			opacity: 0.9;
+		}
+</style>
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button").click(function(){
+				$('h1').hide()
+				alert ("text :" + $('h1').html());
+			});
+			$("h1").hide();
+				$(document).ready(function(){
+			});
+		});
+	</script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body class="all_body">
+
+<div class='navbar navbar-expand-lg '>
+  	<div class='container-fluid'>
+	  	<a class="navbar-brand" href="#">
+	  		<img src='image/logo.png'>
+	  	</a>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mt-2 mr-auto">
+			    <li class="nav-item">
+			        <a class="nav-link" href="index.html">HOME</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="menu.html">MENU</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="galery.html" data-toggle='dropdown'>GALERY</a>
+			        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					   	<a class="dropdown-item" href="Coffe.html">Coffe</a>
+					    <a class="dropdown-item" href="juice.html">Juice</a>
+					    <a class="dropdown-item" href="ice.html">Ice Cream</a>
+					    <a class="dropdown-item" href="#">Cake</a>
+					</div>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="intervaction.html">RESERVATION</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="feed_back.html">FEEDBACK</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="card.html">SPACE CARD</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class='nav-link' href='about_us.html'>ABOUT US</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class="nav-link" href="ContactUs.html">CONTACT US</a>
+			    </li>
+		    </ul>
+		</div>
+  	</div>
+  	<div class='line'></div>
+  </div>
+
+ <h2 class="thide ml-auto mr-auto"> SPACE CARD MEMBER</h2>
+ <hr class="sp_mem">
+ <h1>Akun tidak tersedia</h1>
+ <div class="mn_card ml-auto mr-auto col-sm-12 float-center form-widget">
+ 	<div class="row">
+ 		<div class="col-sm-6">
+		 <form>
+		  <p>Akun Space Card</p>
+		  <div class="form-group row">
+		    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+		    <div class="col-sm-10">
+		      <input type="Email" class="form-control" id="inputEmail" placeholder="Email addres">
+		    </div>
+		  </div><div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label">Sandi</label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+		    </div>
+		  </div>
+		  <button type="submit" class="btn btn-primary" class="form-control" id="button">Masuk</button>
+		 </form>
+		 <form action="?" method="POST">
+			 <div class="g-recaptcha" data-sitekey="6LcygqsUAAAAAGMqpkdFt_sbc2LGhKSSG6fWmRqh"></div>
+			 <br/>
+			 <input type="submit" value="Submit">
+		</form>
+		</div>
+
+		<div class="col-sm-6">
+		<form>
+		  <p>Membuat Space Card</p>
+		   <!-- <button type="submit" class="btn btn-primary" id="button" href="file:///D:/kampus/semester%204/pemrograman%20web/New%20folder/New%20folder/new/buat_akun.html"> Buat Akun</a></button>	 --> 
+		   <a class="btn btn-primary btn-lg btn-block mr-auto ml-auto" href="buat_akun.html">Buat Akun</a>
+		 </form>	
+		</div>
+
+	</div>
+</div>
+<div class='copyright'>
+		Copyright &copy; 2019 Irfan Khalil Khairullah. All Right Reserved.
+	</div>
+
+</body>
+</html>

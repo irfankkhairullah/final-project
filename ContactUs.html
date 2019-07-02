@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="This is the demo of Integrating Google reCAPTCHA in your website with example">
+	<meta name="keywords" content="Google reCAPTCHA, Robot identification, Bot identification, Captcha, reCAPTCHA,  reCAPTCHA Live demo,
+	CAPTCHA demo, Google CAPTCHA, CAPTCHA LiveDemo, dreamscoder.com,dreamscoder">
+	<meta name="author" content="Chinmay Mahajan">
+	<title>Contack Us</title>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="assets/boostrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i&display=swap');
+		body{
+			font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+			background-color: #ccc; 
+		}
+		.navbar{			
+			background: #f00;
+			z-index: 999999999999999999999;
+		}
+		.navbar .line{
+			position: absolute;
+			bottom:-14px;
+			left:0;
+			width:100%;
+			height: 15px;
+			background:url('image/tri.png') repeat-x
+		}
+		.feature{
+			font-family: crete round, serif;
+			position: relative;
+			float: left;
+			width:100%;
+			min-height: 500px;
+			overflow: hidden;
+			padding:130px 0;
+		}
+		.navbar .navbar-brand img{
+			max-height:70px;
+		}
+		.navbar .navbar-nav > li > a{
+			color:#fff !important;
+		}
+		form{
+			width:500px;
+			background:rgba(255, 255, 255, .6);
+			padding:20px;
+			margin:0 auto;
+			margin-top:50px;
+			margin-bottom: 50px;
+		}
+		.copyright{
+			border-top:1px solid #dfdfdf;
+			float: right;
+			width: 100%;
+			padding:30px;
+			background-color:#ccc;
+			opacity: 0.7;			
+		}
+		.map-container-6{
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+		}
+		.map-container-6 iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+		}
+</style>
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+	 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body class="background_ContacUs">
+<div class='navbar navbar-expand-lg '>
+  	<div class='container-fluid '>
+	  	<a class="navbar-brand " href="#">
+	  		<img src='image/logo.png'>
+	  	</a>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mt- mr-auto">
+<li class="nav-item">
+			        <a class="nav-link" href="index.html">HOME</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="menu.html">MENU</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="galery.html" data-toggle='dropdown'>GALERY</a>
+			        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					   	<a class="dropdown-item" href="Coffe.html">Coffe</a>
+					    <a class="dropdown-item" href="juice.html">Juice</a>
+					    <a class="dropdown-item" href="ice.html">Ice Cream</a>
+					    <a class="dropdown-item" href="#">Cake</a>
+					</div>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="intervaction.html">RESERVATION</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="feed_back.html">FEEDBACK</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="card.html">SPACE CARD</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class='nav-link' href='about_us.html'>ABOUT US</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class="nav-link" href="ContactUs.html">CONTACT US</a>
+			    </li>
+		    </ul>
+		</div>
+  	</div>
+  	<div class='line'></div>
+  </div>
+
+  <!--Google map-->
+<!--Section: Contact v.1-->
+<div class="container pt-4">
+<section class="section pb-5">
+  <!--Section heading-->
+  <h2 class="section-heading h1 pt-4"><center> Contact us </center></h2>
+  <!--Section description-->
+  <p class="section-description pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+    amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
+    pariatur accusamus veniam.</p>
+
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-5 mb-4">
+
+      <!--Form with header-->
+      <div class="card">
+
+        <div class="card-body">
+          <!--Header-->
+          <div class="form-header blue accent-1">
+            <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+          </div>
+
+          <p>We'll write rarely, but only the best content.</p>
+          <br>
+          <div>
+	          <label>Masuk Dengan Facebook</label>
+	          <p>
+				  
+				    <h2><center><a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-facebook-square"></i>  Facebook </a></center></h2>
+
+			   </p>
+			   <div class="collapse" id="collapseExample">
+				  <div class="card card-body">
+				 <form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <div class="form-group form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+				  </div>
+				  <!-- api -->
+				   <form action="?" method="POST">
+				      <div class="g-recaptcha" data-sitekey="6LcygqsUAAAAAGMqpkdFt_sbc2LGhKSSG6fWmRqh"></div>
+				      <br/>
+				      <input type="submit" value="Submit">
+				    </form>
+
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			  </div>
+			</div>
+		   </div>
+
+          <!--Body-->
+
+        </div>
+
+      </div>
+      <!--Form with header-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-7 bg-white">
+
+      <!--Google map-->
+      <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+        <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <br>
+      <!--Buttons-->
+      <div class="row text-center ">
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fa fa-map-marker"></i></a>
+          <p>San Francisco, CA 94126</p>
+          <p>United States</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn blue accent-1"><i class="fa fa-phone"></i></a>
+          <p>+ 01 234 567 89</p>
+          <p>Mon - Fri, 8:00-22:00</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fa fa-envelope"></i></a>
+          <p>info@gmail.com</p>
+          <p>sale@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.1-->
+</div>
+</div>
+</body>
+</html>

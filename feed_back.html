@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>feed back</title>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="assets/boostrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i&display=swap');
+		body{
+			font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+			background: url(image/bg_coffe.jpg); 
+		}
+		.navbar{			
+			background: #f00;
+			z-index: 999999999999999999999;
+		}
+		.navbar .line{
+			position: absolute;
+			bottom:-14px;
+			left:0;
+			width:100%;
+			height: 15px;
+			background:url('image/tri.png') repeat-x
+		}
+		.feature{
+			font-family: crete round, serif;
+			position: relative;
+			float: left;
+			width:100%;
+			min-height: 500px;
+			overflow: hidden;
+			padding:130px 0;
+		}
+		.navbar .navbar-brand img{
+			max-height:70px;
+		}
+		.navbar .navbar-nav > li > a{
+			color:#fff !important;
+		}
+		form{
+			width:500px;
+			background:rgba(255, 255, 255, .6);
+			padding:20px;
+			margin:0 auto;
+			margin-top:50px;
+			margin-bottom: 50px;
+		}
+		.copyright{
+			border-top:1px solid #dfdfdf;
+			float: right;
+			width: 100%;
+			padding:30px;
+			background-color:#ccc;
+			opacity: 0.7;
+		}
+</style>
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body>
+<div class='navbar navbar-expand-lg '>
+  	<div class='container-fluid'>
+	  	<a class="navbar-brand" href="#">
+	  		<img src='image/logo.png'>
+	  	</a>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mt-2 mr-auto">
+			    <li class="nav-item">
+			        <a class="nav-link" href="index.html">HOME</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="menu.html">MENU</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="galery.html" data-toggle='dropdown'>GALERY</a>
+			        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					   	<a class="dropdown-item" href="Coffe.html">Coffe</a>
+					    <a class="dropdown-item" href="juice.html">Juice</a>
+					    <a class="dropdown-item" href="ice.html">Ice Cream</a>
+					    <a class="dropdown-item" href="#">Cake</a>
+					</div>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="intervaction.html">RESERVATION</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="feed_back.html">FEEDBACK</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="card.html">SPACE CARD</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class='nav-link' href='about_us.html'>ABOUT US</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class="nav-link" href="ContactUs.html">CONTACT US</a>
+			    </li>
+		    </ul>
+		</div>
+  	</div>
+  	<div class='line'></div>
+  </div>
+
+
+  <form>  
+  <div class="text-center">
+	<h3 class="white-text">
+	<i class=" white-text"></i> FeedBack</h3>
+	<hr class="hr-light">
+  </div>
+
+
+ 	<div ng-app="myApp" ng-controller="formCtrl" class="form-group">
+	<form>
+	<label for="exampleInputName1">Nama</label><br>
+	<input type="text" class="form-control" ng-model="nama" id="exampleInputName1">
+ 	<div class="form-group">
+	</div>
+
+	<script>
+	var app = angular.module('myApp', []);
+	app.controller('formCtrl', function($scope) {
+	    $scope.nama = "";
+	});
+	</script>
+
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Ingatlah Email Anda. Karena Email Anda Adalah Jantung Dompet Saya</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Sandi</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Sandi">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Comment</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comment dan subscribe ya FeedBack ini agar dompet saya ada isinya"></textarea>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary ">Masuk</button>
+</form>
+
+<div class='copyright'>
+		Copyright &copy; 2019 Irfan Khalil Khairullah. All Right Reserved.
+	</div>
+</body>
+</html>

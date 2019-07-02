@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat Akun</title>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="assets/boostrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i&display=swap');
+		body{
+			font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+			background: url(image/bg_coffe.jpg); 
+			background-size: 125%;
+		}
+		.navbar{			
+			background: #f00;
+			z-index: 999999999999999999999;
+		}
+		.navbar .line{
+			position: absolute;
+			bottom:-14px;
+			left:0;
+			width:100%;
+			height: 15px;
+			background:url('image/tri.png') repeat-x
+		}
+		.feature{
+			font-family: crete round, serif;
+			position: relative;
+			float: left;
+			width:100%;
+			min-height: 500px;
+			overflow: hidden;
+			padding:130px 0;
+		}
+		.navbar .navbar-brand img{
+			max-height:70px;
+		}
+		.navbar .navbar-nav > li > a{
+			color:#fff !important;
+		}
+		form{
+			width:500px;
+			background:rgba(255, 255, 255, .6);
+			padding:20px;
+			margin:0 auto;
+			margin-top:50px;
+			margin-bottom: 50px;
+		}
+		.copyright{
+			border-top:1px solid #dfdfdf;
+			float: right;
+			width: 100%;
+			padding:30px;
+			background-color:#ccc;
+			opacity: 0.7;
+		}
+		.thide{
+			text-align: center;
+			color: red;
+		}
+		.form_peringatan{
+			color: red;
+		}
+		.footer-widget{
+			margin: auto;
+		}
+
+</style>
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#Firstname").keypress(function(){
+				$("#Typing1").text("Typing First name..");
+			});
+			$("#Firstname").blur(function(){
+				$("#Typing1").fadeOut();
+			});
+
+			$("#Lastname").keypress(function(){
+				$("#Typin2").text("Typing Lastname..");
+			});
+			$("#Lastname").blur(function(){
+				$("#Typin2").fadeOut();
+			});
+			$("#NewAkun").click(function(){
+				$('h1').hide()
+				alert ("text :" + $('h1').html());
+			});
+			$("h1").hide();
+				$(document).ready(function(){
+			});
+		});
+		
+	</script>
+</head>
+<body>
+<div class='navbar navbar-expand-lg '>
+  	<div class='container-fluid '>
+	  	<a class="navbar-brand " href="#">
+	  		<img src='image/logo.png'>
+	  	</a>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mt- mr-auto">
+			   <li class="nav-item">
+			        <a class="nav-link" href="index.html">HOME</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="menu.html">MENU</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="galery.html" data-toggle='dropdown'>GALERY</a>
+			        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					   	<a class="dropdown-item" href="Coffe.html">Coffe</a>
+					    <a class="dropdown-item" href="juice.html">Juice</a>
+					    <a class="dropdown-item" href="ice.html">Ice Cream</a>
+					    <a class="dropdown-item" href="#">Cake</a>
+					</div>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="intervaction.html">RESERVATION</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="feed_back.html">FEEDBACK</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="card.html">SPACE CARD</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class='nav-link' href='about_us.html'>ABOUT US</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class="nav-link" href="ContactUs.html">CONTACT US</a>
+			    </li>
+		    </ul>
+		</div>
+  	</div>
+  	<div class='line'></div>
+  </div>
+
+
+<div class='col-md-12 float-left footer-widget'>
+	<div class='row'>
+		<div class='col-md-6 ml-auto mr-auto' >
+			<form>
+ 			<h3 class="m-0 " style="font-weight: bold;"><center> Membuat Akun Space Card</center></h3>
+
+ 			<hr>
+ 			<p class="m-0">Simbol yang bertanda :<font color="red"> * (wajib di isi)</font></p>
+ 			<p>Memasukan Email dan Password</p>
+			  
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Confrim Password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confrim Password">
+			  </div>
+
+		  <p>Berikan Informasi Kontak Anda</p>
+		  <p id="Typing1"></p>
+		  <p id="Typin2"></p>
+		  <h1>Nomer Card tidak valid</h1>
+  			<div class="col">
+  				<!-- <label for="example-tel-input" class="mr-auto ml-auto">Nama</label>
+ -->    		<div class="row">
+					<form>
+					<div ng-app="myApp" ng-controller="formCtrl" class="form-row">
+						 <form novalidate class="col">
+						 <label>Nama Depan</label> 
+						 <input type="text" class="form-control" ng-model="firstName" id="Firstname"><br>
+						 <label>Nama Belakang</label>
+						 <input type="text" class="form-control" ng-model="lastName" id="Lastname">
+					</form>
+					</div>
+					<script>
+						var app = angular.module('myApp', []);
+						app.controller('formCtrl', function($scope) {
+						    $scope. = "firstname";
+						});
+						app.controller('formCtrl', function($scope) {
+						    $scope. = "lastname";
+						});
+					</script>
+
+      			<div class="form-group row p-0">
+				  <label for="example-date-input" class="col-6 col-form-label">Tanggal Lahir</label>
+				  <div class="col-10">
+				    <input class="form-control" type="date" value="" id="example-date-input">
+				  </div>
+				</div>
+
+			<div class="form-group">
+			    <label for="exampleInputPassword1">Nomer Card</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="nomer card">
+			  </div>
+
+				<div class="form-group row p-3">
+				<label for="basic-url">No telp:</label>
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="basic-addon3">+62</span>
+					  </div>
+					  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+					</div>	
+				</div>
+				<a class="btn btn-primary btn-lg btn-block mr-auto ml-auto" id="NewAkun" >New Akun</a>
+		 </div>
+		 </form>
+		</div>
+	</div>
+<div class='copyright'>
+		Copyright &copy; 2019 Irfan Khalil Khairullah. All Right Reserved.
+	</div>
+</body>
+</html>

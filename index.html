@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="assets/boostrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i&display=swap');
+		body{
+			font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+		}
+		.navbar{
+			background: #f00;
+			z-index: 999999999999999999999;
+		}
+		.navbar .line{
+			position: absolute;
+			bottom:-14px;
+			left:0;
+			width:100%;
+			height: 15px;
+			background:url('image/tri.png') repeat-x
+		}
+		.navbar .navbar-brand img{
+			max-height:70px;
+		}
+		.navbar .navbar-nav > li > a{
+			color:#fff !important;
+		}
+		a.ml-auto{
+			color:#fff;
+		}
+		img.home1{
+			width: 100%;
+			margin-top: 80px;
+
+		}
+		.feature{
+			font-family: crete round, serif;
+			position: relative;
+			float: left;
+			width:100%;
+			min-height: 500px;
+			overflow: hidden;
+			padding:130px 0;
+		}
+		img.home2{
+			position: absolute;
+			left:0;
+			top:0;
+			width: 100%;
+		}
+		.feature .page-header{
+			font-style: italic;
+		}
+		.feature p{
+			font-size: 18px;
+			color:#555;
+			padding-right:100px;
+			margin-bottom: 20px;
+		}
+		.feature a{
+			border-bottom:2px dotted #999;
+			padding:10px 0;
+			color: #99f9;
+		}
+		img.home3{
+			position: absolute;
+			left:0;
+			top:0;
+			width: 100%
+		}
+
+		p.desc{
+			color: #fff;
+			font-size: 18px;
+			padding-right:100px;
+			margin-bottom: 20px;
+		}
+
+		.feature1{
+			font-family: crete round, serif;
+			position: relative;
+			float: left;
+			width:100%;
+			min-height: 300px;
+			overflow: hidden;
+			padding:110px 0;
+		}
+		.bg-cl{
+			background:rgba(255, 255, 255, .6);
+			padding:30px;
+			color:#000 !important
+		}
+		.footer{
+			background-color: #999;
+			float:left;
+			width: 100%;
+
+		}
+		.footer a{
+			font-size:40px;
+			padding: 0 15px;
+			color:#fff;
+		}
+
+		.footer_global{
+			padding: 30px;
+		}
+
+		.footer-widget{
+			padding:30px;
+		}
+		.footer-widget a{
+			color:#777;
+		}
+		.footer-widget h5{
+			color:#000;
+			text-transform: uppercase;
+			font-weight: semibold;
+		}
+		.copyright{
+			border-top:1px solid #dfdfdf;
+			float: left;
+			width: 100%;
+			padding:30px;
+		}
+	    html, body {
+		      margin: 0;
+		      padding: 0;
+		    }
+
+	    * {
+		      box-sizing: border-box;
+		    }
+			
+		.row {
+				background-color: #ececec;
+				background-color: rgba(233,230,230,0.79);
+				padding: 2% 0;
+			}
+	</style>
+
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+<!-- menu navigasi navbar -->
+  <div class='navbar navbar-expand-lg fixed-top'>
+  	<div class='container-fluid'>
+	  	<a class="navbar-brand" href="index.html">
+	  		<img src='image/logo.png'>
+	  	</a>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mt-2 mr-auto">
+			    <li class="nav-item">
+			        <a class="nav-link" href="index.html">HOME</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="menu.html">MENU</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="galery.html" data-toggle='dropdown'>GALERY</a>
+			        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					   	<a class="dropdown-item" href="Coffe.html">Coffe</a>
+					    <a class="dropdown-item" href="juice.html">Juice</a>
+					    <a class="dropdown-item" href="ice.html">Ice Cream</a>
+					    <a class="dropdown-item" href="#">Cake</a>
+					</div>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="intervaction.html">RESERVATION</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="feed_back.html">FEEDBACK</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="card.html">SPACE CARD</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class='nav-link' href='about_us.html'>ABOUT US</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class="nav-link" href="ContactUs.html">CONTACT US</a>
+			    </li>
+		    </ul>
+		</div>
+  	</div>
+  	<div class='line'></div>
+  </div>
+<!-- menu gambar home 1 -->
+  <a href="#"><img src="image/img home.png" class="home1">
+  </a>
+<!-- menu gambar home 2 -->
+  <div class='feature'>
+  	<img src="image/img home2.png" class='home2'>
+  	<div class='container-fluid'>
+  		<div class='col-sm-6 ml-auto'>
+  			<h2 class='page-header'>Let’s Sip & Catch!</h2>
+  			<p>Play the game by catching the ingredients and enjoy IDR 20k Off on your favourite Summer Drinks! 
+Be the Top Catchers and you’ll get another benefit from us. </p>
+			
+			<a href='#'>Play Now</a>
+  		</div>
+  	</div>
+  </div>
+
+<!-- menu gambar home 3 -->
+  <div class='feature1'>
+  	<img src="image/img home3.png" class='home2'>
+  	<div class='container-fluid'>
+  		<div class='col-sm-6 ml-auto'>
+  			<p class='bg-cl'>Triple Mocha Frappuccino is a dream come true for dessert lovers with layers of signature whipped cream infused with cold brew, white chocolate mocha and dark caramel, while the new Dark Caramel Coffee topped with rich, creamy dark caramel sauce, offers layers of whipped cream infused with cold brew, white chocolate and dark caramel.</p>
+  		</div>
+  	</div>
+  </div>
+<!-- menu link sosmedia home -->
+  <div class="footer">
+  	<a href='#'><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+  	<a href='#'><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+  	<a href='#'><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  </div>
+
+<!-- menu  -->
+	<div class='col-md-12 float-left footer-widget'>
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='row'>
+					<div class='col-md-4'>
+						<h5>About Us</h5>
+						<ul class='nav flex-column'>
+							<li><a href="#">Our Heritage</a></li>
+							<li><a href='#'>Pressroom</a></li>
+							<li><a href='#'>Our Company</a></li>
+							<li><a href='#'>Career Center</a></li>
+							<li><a href='#'>Newsroom</a></li>
+						</ul>
+					</div>
+					<div class='col-md-4'>
+						<h5>Customer Service</h5>
+						<ul class='nav flex-column'>
+							<li><a href="#">Frequenty Asked Question</a></li>
+						</ul>
+					</div>
+					<div class='col-md-4'>
+						<h5>Quick Links</h5>
+						<ul class='nav flex-column'>
+							<li><a href="#">Store Locator</a></li>
+							<li><a href="#">Our Partner</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='copyright'>
+		Copyright &copy; 2019 Irfan Khalil Khairullah. All Right Reserved.
+	</div>
+</body>
+</html>
