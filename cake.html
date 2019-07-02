@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cookies</title>
+	<link rel="stylesheet" type="text/css" href="assets/boostrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap');
+
+		body{
+			font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+		}
+		.navbar{			
+			background: #f00;
+			z-index: 999999999999999999999;
+		}
+		.navbar .line{
+			position: absolute;
+			bottom:-14px;
+			left:0;
+			width:100%;
+			height: 15px;
+			background:url('image/tri.png') repeat-x
+		}
+		.feature{
+			font-family: crete round, serif;
+			position: relative;
+			float: left;
+			width:100%;
+			min-height: 500px;
+			overflow: hidden;
+			padding:130px 0;
+		}
+		.navbar .navbar-brand img{
+			max-height:70px;
+		}
+		.navbar .navbar-nav > li > a{
+			color:#fff !important;
+		}
+		form{
+			width:500px;
+			background:rgba(255, 255, 255, .6);
+			padding:20px;
+			margin:0 auto;
+			margin-top:50px;
+			margin-bottom: 50px;
+		}
+		.copyright{
+			border-top:1px solid #dfdfdf;
+			float: right;
+			width: 100%;
+			padding:30px;
+			background-color:#ccc;
+			opacity: 0.7;
+		}		
+		.container{
+			display: flex;
+			flex-direction: column;
+		}
+		#main{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: left;
+			margin: 10px;
+
+		}
+		.tengah {
+			background-color: pink;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			background-image: url("image/5.jpg");
+			opacity: 0.8;
+		}
+		.boot {
+			border-radius: 8px;
+			background-color: chocolate;
+			color: black;
+			margin:30px;
+			padding: 10px;
+		}
+		.boot:hover {
+			background-color: grey;
+			color: white;
+		}
+		.boot:active {
+			background-color: red;
+			color: white;
+		}
+		.box{
+			margin: 30px;
+			background-image: blue;
+			position: relative
+		}
+		.img{
+			width: 300px;
+			height: 300px;
+			border-radius: 0.8;
+		}
+
+		.text{
+			position: absolute;
+			top: 40px;
+			left: 5px;
+			font-weight: bold;
+			color: #201712;
+		}
+		.ovl {
+ 			position: absolute;
+  			bottom: 0;
+  			left: 0;
+  			right: 0;
+  			background-color: white;
+  			overflow: hidden;
+  			width: 100%;
+  			height: 0;
+  			transition: .7s ease;
+		}
+		.caption {
+  			color: #201712;
+ 			font-size: 12px;
+  			font-weight: bold;
+  			position: relative;
+  			top: 15px;
+  			left: 50%;
+  			padding: 250px 10px 10px 10px;
+  			-webkit-transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			text-align: center;
+		}
+		.box:hover .ovl{
+			height: 100%;
+			opacity: 0.5;
+			filter: alpha(opacity=50)
+		}
+
+		.box:active .ovl{
+			overflow: hidden;
+			background-color: grey;
+			opacity: 0.5;
+			filter: alpha(opacity=50);
+		}
+		.triangle {
+			width: 5;
+			height: 0;
+			border-bottom: 70px solid white;
+			border-right: 70px solid transparent;
+			position: absolute;
+			top: 230px;
+		}
+		.price {
+			margin: 20px 0px 0px 5px;
+		}
+		.bg{
+			background-color: #fce;
+		}
+
+</style>
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script type="text/javascript" src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body class="bg">
+	<div class='navbar navbar-expand-lg '>
+  	<div class='container-fluid'>
+	  	<a class="navbar-brand" href="#">
+	  		<img src='image/logo.png'>
+	  	</a>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mt-2 mr-auto">
+			    <li class="nav-item">
+			        <a class="nav-link" href="index.html">HOME</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="menu.html">MENU</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="galery.html" data-toggle='dropdown'>GALERY</a>
+			        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					   	<a class="dropdown-item" href="Coffe.html">Coffe</a>
+					    <a class="dropdown-item" href="juice.html">Juice</a>
+					    <a class="dropdown-item" href="ice.html">Ice Cream</a>
+					    <a class="dropdown-item" href="cake.html">cookies</a>
+					</div>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="intervaction.html">RESERVATION</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="feed_back.html">FEEDBACK</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link" href="card.html">SPACE CARD</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class='nav-link' href='about_us.html'>ABOUT US</a>
+			    </li>
+			    <li class='nav-item'>
+			    	<a class="nav-link" href="ContactUs.html">CONTACT US</a>
+			    </li>
+		    </ul>
+		</div>
+  	</div>
+  	<div class='line'></div>
+  </div>
+
+  <div class="tengah">
+  	<a href="galery.html" class="boot">All</a>
+  	<a href="coffe.html" class="boot">Caffe</a>
+  	<a href="juice.html" class="boot">Juice</a>
+  	<a href="ice.html" class="boot">Ice Cream</a>
+  	<a href="cake.html" class="boot">cookies</a>
+  </div>
+
+	<div class="container ">
+		<div id="main">
+			<div class="box">
+				<img class="img" src="cake/bagels-bakery-baking.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 12K</div>
+				</div>
+			</div>
+		  <div class="box">
+				<img class="img" src="cake/baked-baking-cakes.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 13K</div>
+				</div>
+			</div>
+			<div class="box">
+				<img class="img" src="cake/baked-baking-christmas-cookies.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 12K</div>
+				</div>
+			</div>
+			 <div class="box">
+				<img class="img" src="cake/christmas-christmas-cookies-food.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 15K</div>
+				</div>
+			</div>
+			 <div class="box">
+				<img class="img" src="cake/baking-cake-candy.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 15K</div>
+				</div>
+			</div>
+			 <div class="box">
+				<img class="img" src="cake/cookies-delicious-dessert.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 15K</div>
+				</div>
+			</div>
+			 <div class="box">
+				<img class="img" src="cake/black-coffee-breafast-caffeine.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 15K</div>
+				</div>
+			</div>
+			<div class="box">
+				<img class="img" src="cake/black-coffee-breakfast-caffeine.jpg">
+				<a href="#">
+					<div class="ovl">
+						<div class="caption"><p><h3>STRAIGHT COFFE</h3><br>
+						<h5>straight coffe adalah minuman hasil seduhan biji kopi yang telah disangrai
+						dan dihaluskan menjadi bubuk</h5></p></div>
+					</div>
+				</a>
+				<div class="triangle">
+					<div class="price">IDR 11K</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='copyright'>
+		Copyright &copy; 2019 Irfan Khalil Khairullah. All Right Reserved.
+	</div>
+</body>
+</html>
